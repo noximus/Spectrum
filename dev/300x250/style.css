@@ -14,6 +14,16 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
+a img {
+	border: none; 
+	text-decoration:none;
+	outline:none;
+}
+a:hover img {
+	border: none; 
+	text-decoration:none;
+	outline:none;
+}
 
 #logo,#left_cloud,#right_cloud,#switch_now,#switch_glow1,#switch_glow2,#switch_glow3,#switch_glow4,#switch_glow5{
 	position: absolute;
@@ -22,9 +32,10 @@
 	opacity: 0;
 	display: block;
 }
-{
+#switch_now{
 	position: absolute;
 	top: 0;
 	left: 0;
 	display: block;
+	opacity: 1;
 }
