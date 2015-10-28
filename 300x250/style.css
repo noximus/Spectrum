@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#container {
+    position: absolute;
+    width:300px;
+    height:250px; 
+    background: url('background.jpg'); 
+    border:solid;
+    border-color:#000;
+    border-width:1px;
+    overflow:hidden;
+}
