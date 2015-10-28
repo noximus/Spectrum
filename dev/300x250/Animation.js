@@ -58,7 +58,7 @@ container.onmouseover = function() {
       TweenLite.to(switch_glow4, 0.2, {opacity:0, delay:.4});
       TweenLite.to(switch_glow5, 0.2, {opacity:0, delay:.5}); 
   }
-};
+}; 
 BanTimeline.init();
 
 
