@@ -1,10 +1,10 @@
 var BanTimeline = {
-  f1_img1: document.getElementById("f1_img1"),
-  f1_img2: document.getElementById("f1_img2"),
-  f2_img1: document.getElementById("f2_img1"),
-  f3_img1: document.getElementById("f3_img1"),
-  f4_img1: document.getElementById("f4_img1"),
-  f5_img1: document.getElementById("f5_img1"),
+  // f1_img1: document.getElementById("f1_img1"),
+  // f1_img2: document.getElementById("f1_img2"),
+  // f2_img1: document.getElementById("f2_img1"),
+  // f3_img1: document.getElementById("f3_img1"),
+  // f4_img1: document.getElementById("f4_img1"),
+  // f5_img1: document.getElementById("f5_img1"),
   init: function () {
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
 

@@ -10,11 +10,21 @@
     border-color:#000;
     border-width:1px;
     overflow:hidden;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
-#logo,#left_cloud,#right_cloud{
+
+#logo,#left_cloud,#right_cloud,#switch_now,#switch_glow1,#switch_glow2,#switch_glow3,#switch_glow4,#switch_glow5{
 	position: absolute;
 	top: 0;
 	left: 0;
 	opacity: 0;
+	display: block;
+}
+{
+	position: absolute;
+	top: 0;
+	left: 0;
 	display: block;
 }
