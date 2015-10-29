@@ -87,15 +87,16 @@ var BanTimeline = {
     TweenLite.to(left_light1, .3, {display:"none",opacity:0, delay:.4});
     TweenLite.to(left_light2, .3, {display:"none",opacity:0, delay:.4});
     TweenLite.to(left_light3, .3, {display:"none",opacity:0, delay:.4});
-
-
-
-
-
+    //right lightning
     TweenLite.to(right_cloud, .1, {display:"block", opacity:.9, delay:.6});
     TweenLite.to(right_cloud, .1, {display:"block", opacity:.6, delay:.7});
     TweenLite.to(right_cloud, 1, {display:"block", opacity:0, delay:1.3});
-
+    TweenLite.to(right_light1, .1, {display:"block", delay:.6});
+    TweenLite.to(right_light2, .1, {display:"block", delay:.65});
+    TweenLite.to(right_light3, .1, {display:"block", delay:.7});
+    TweenLite.to(right_light1, .3, {display:"none",opacity:0, delay:.7});
+    TweenLite.to(right_light2, .3, {display:"none",opacity:0, delay:.7});
+    TweenLite.to(right_light3, .3, {display:"none",opacity:0, delay:.7});
 
 
 

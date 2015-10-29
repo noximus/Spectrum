@@ -46,6 +46,12 @@ a:hover img {
 	position: absolute;
 	z-index: 3;
 }
+#right_light1,#right_light2,#right_light3{
+	display: none;
+	position: absolute;
+	z-index: 3;
+	left: 200px;
+}
 #flick1{
 	z-index: 11;
 	display: block;
@@ -61,5 +67,6 @@ a:hover img {
 	top: -520px;
 	left: -150px;
 	display: none;
+	opacity: .6;
 	z-index: 1;
 }
