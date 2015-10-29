@@ -1,5 +1,6 @@
 var BanTimeline = {
   glowBtn: 0,
+  rainOn: 0,
   container: document.getElementById("container"),
   init: function () {
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
@@ -29,13 +30,49 @@ var BanTimeline = {
     }
   },
 
+
+  rain: function () {
+      TweenLite.to(rain1, 0, {display:"block", top:-520,left:-150});  
+      TweenLite.to(rain2, 0, {display:"block", top:-520,left:-150});
+      TweenLite.to(rain3, 0, {display:"block", top:-520,left:-150});
+      TweenLite.to(rain4, 0, {display:"block", top:-520,left:-150});
+      TweenLite.to(rain5, 0, {display:"block", top:-520,left:-150});
+      TweenLite.to(rain6, 0, {display:"block", top:-520,left:-150});
+      TweenLite.to(rain7, 0, {display:"block", top:-520,left:-150});
+      TweenLite.to(rain8, 0, {display:"block", top:-520,left:-150});
+      TweenLite.to(rain9, 0, {display:"block", top:-520,left:-150});
+      TweenLite.to(rain10, 0, {display:"block", top:-520,left:-150, delay:1});
+      TweenLite.to(rain11, 0, {display:"block", top:-520,left:-150, delay:1});
+      TweenLite.to(rain12, 0, {display:"block", top:-520,left:-150, delay:1});
+      TweenLite.to(rain13, 0, {display:"block", top:-520,left:-150, delay:1});
+      TweenLite.to(rain14, 0, {display:"block", top:-520,left:-150, delay:1});
+    if(BanTimeline.rainOn == 1)
+    {
+      TweenLite.to(rain1, 1.3, {display:"block", top:300,left:-260, delay:0});  
+      TweenLite.to(rain2, 1.3, {display:"block", top:300,left:-260, delay:.2});
+      TweenLite.to(rain3, 1.3, {display:"block", top:300,left:-260, delay:.4});
+      TweenLite.to(rain4, 1.3, {display:"block", top:300,left:-260, delay:.6});
+      TweenLite.to(rain5, 1.3, {display:"block", top:300,left:-260, delay:.8});
+      TweenLite.to(rain6, 1.3, {display:"block", top:300,left:-260, delay:1});
+      TweenLite.to(rain7, 1.3, {display:"block", top:300,left:-260, delay:1.2});
+      TweenLite.to(rain8, 1.3, {display:"block", top:300,left:-260, delay:1.4});
+      TweenLite.to(rain9, 1.3, {display:"block", top:300,left:-260, delay:1.6});
+      TweenLite.to(rain10, 1.3, {display:"block", top:300,left:-260, delay:1.8});
+      TweenLite.to(rain11, 1.3, {display:"block", top:300,left:-260, delay:2});
+      TweenLite.to(rain12, 1.3, {display:"block", top:300,left:-260, delay:2.2});
+      TweenLite.to(rain13, 1.3, {display:"block", top:300,left:-260, delay:2.4});
+      TweenLite.to(rain14, 1.3, {display:"block", top:300,left:-260, delay:2.6});
+      
+    }
+    TweenLite.delayedCall(2.3, BanTimeline.rain);
+  },
+
   frame1: function () {
-    BanTimeline.glowBtn=0;
-    //BanTimeline.glow();
-    //console.log('frame1')
-    // TweenLite.to(f1_img1, 2, {opacity:1, display: 'block', delay: 0, ease: Quad.easeOut, yoyo: true});
-    // TweenLite.to(f1_img2, 2, {opacity:1, display: 'block', delay: 1, ease: Quad.easeOut, yoyo: true});
-    // TweenLite.delayedCall(1, BanTimeline.glow);
+    BanTimeline.glowBtn = 1;
+    BanTimeline.rainOn = 1; 
+    TweenLite.delayedCall(0, BanTimeline.rain);
+      
+      
     // TweenLite.delayedCall(3, BanTimeline.frame2);
   },
   frame2: function () {
