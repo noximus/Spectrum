@@ -187,14 +187,20 @@ var BanTimeline = {
     TweenLite.to(flick2, .05, {display:"block", delay:.75});
     TweenLite.to(flick2, .03, {display:"none", delay:.8});
     TweenLite.to(flick2, .05, {display:"block", delay:.9});
-    TweenLite.to(noSignal1, 0, {display:"block", delay:1.2});
-    TweenLite.to(noSignal2, 0, {display:"block", delay:1.3});
-    TweenLite.to(noSignal2, 0, {display:"none", delay:1.4});
-    TweenLite.to(noSignal2, 0, {display:"block", delay:1.5});
-    TweenLite.to(noSignal2, 0, {display:"none", delay:1.55});
-    TweenLite.to(noSignal2, 0, {display:"block", delay:1.7});
-    TweenLite.to(noSignal2, 0, {display:"none", delay:1.9});
-    TweenLite.to(noSignal2, 0, {display:"block", delay:2});
+    TweenLite.to(noSignal2, 0, {display:"block", delay:1.2});
+    TweenLite.to(noSignalImg, 0, {display:"block", delay:1.2});
+    TweenLite.to(noSignalImg, 0, {scaleX:1.2, delay:1.2});
+    TweenLite.to(noSignalImg, 0, {scaleX:1, delay:1.3});
+    TweenLite.to(noSignalImg, 0, {scaleX:1.5, delay:1.4});
+    TweenLite.to(noSignalImg, 0, {scaleX:1.2, delay:1.45});
+    TweenLite.to(noSignalImg, 0, {scaleX:1, delay:1.6});
+    // TweenLite.to(noSignal2, 0, {display:"block", delay:1.3});
+    // TweenLite.to(noSignal2, 0, {display:"none", delay:1.4});
+    // TweenLite.to(noSignal2, 0, {display:"block", delay:1.5});
+    // TweenLite.to(noSignal2, 0, {display:"none", delay:1.55});
+    // TweenLite.to(noSignal2, 0, {display:"block", delay:1.7});
+    // TweenLite.to(noSignal2, 0, {display:"none", delay:1.9});
+    // TweenLite.to(noSignal2, 0, {display:"block", delay:2});
 
 
 

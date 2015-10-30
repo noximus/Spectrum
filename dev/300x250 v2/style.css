@@ -116,6 +116,9 @@ a:hover img {
 #noSignal2{
 	top:56px;
 	left: 45px;
+	height: 119px;
+	width: 211px;
+	overflow: hidden;
 }
 #flick2,#flick1{
 	top: 56px;
