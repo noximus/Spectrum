@@ -91,11 +91,35 @@ a:hover img {
 	display: none;
 	opacity: 0;
 	position: absolute;
+	width: 300px;
+	height: 250px;
 }
-#end_lightning_1,#end_lightning_2,#end_lightning_3,#end_lightning_4,#end_lightning_5,#end_lightning_6,#burst,#final_frame{
+#burst{
+	background: rgba(246,246,246,1);
+	background: -moz-linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 0%, rgba(170,226,255,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(246,246,246,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(170,226,255,1)));
+	background: -webkit-linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 0%, rgba(170,226,255,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 0%, rgba(170,226,255,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 0%, rgba(170,226,255,1) 100%);
+	background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 0%, rgba(170,226,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#aae2ff', GradientType=1 );
+}
+#end_lightning_1,#end_lightning_2,#end_lightning_3,#end_lightning_4,#end_lightning_5,#end_lightning_6,#burst,#finalBg,#finaltxt{
 	display: none;
 	position: absolute;
 	z-index: 15;
+}
+#noSignal1{
+	top:65px;
+	left: 44px;
+}
+#noSignal2{
+	top:56px;
+	left: 45px;
+}
+#flick2,#flick1{
+	top: 56px;
+	left: 44px;
 }
 #whiteBlind{
 	opacity: 0;
@@ -120,11 +144,26 @@ a:hover img {
 	right: 2px;
 }
 #replay_container{
-	display: block;
+	display: none;
 	position: absolute;
 	z-index: 100;
 	bottom: 0;
 	right: 0;
-	height: 20px;
-	width: 60px;
+	font-size: 10px;
+	font-family: arial;
+	color: white;
+	height: 18px;
+	width: 50px;
+	background: #04254e;
+}
+#replayTxt{
+	margin: 4px;
+	display: block;
+}
+#finalBg{
+	height: 250px;
+	width: 300px;
+	background: #31a3e1;
+	position: absolute;
+	display: none;
 }

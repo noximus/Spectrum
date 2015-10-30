@@ -154,7 +154,7 @@ var BanTimeline = {
     BanTimeline.glowBtn = 1;
     BanTimeline.rainOn = 1; 
     TweenLite.delayedCall(0, BanTimeline.rain);
-    TweenLite.delayedCall(1, BanTimeline.frame2);
+    TweenLite.delayedCall(1, BanTimeline.frame2); 
   },
   frame2: function () {
     TweenLite.to(flick1, .1, {opacity:0, delay:.3});
@@ -165,27 +165,23 @@ var BanTimeline = {
     TweenLite.to(left_cloud, .1, {display:"block", opacity:.9, delay:.3});
     TweenLite.to(left_cloud, .1, {display:"block", opacity:.6, delay:.4});
     TweenLite.to(left_cloud, 1, {display:"block", opacity:0, delay:1});
+
     //left lightning
-    TweenLite.to(left_light1, .1, {display:"block", delay:.3});
-    TweenLite.to(left_light2, .1, {display:"block", delay:.35});
+  
     TweenLite.to(left_light3, .1, {display:"block", delay:.4});
+
+    TweenLite.to(left_light3, .3, {display:"none",opacity:0, delay:.5});
     TweenLite.to(whiteBg, 0, {display:"block", delay:.4});
     TweenLite.to(whiteBg, .1, {display:"none", opacity:0, delay:.5});
 
-
-    TweenLite.to(left_light1, .3, {display:"none",opacity:0, delay:.4});
-    TweenLite.to(left_light2, .3, {display:"none",opacity:0, delay:.4});
-    TweenLite.to(left_light3, .3, {display:"none",opacity:0, delay:.4});
     //right lightning
     TweenLite.to(right_cloud, .1, {display:"block", opacity:.9, delay:.6});
     TweenLite.to(right_cloud, .1, {display:"block", opacity:.6, delay:.7});
     TweenLite.to(right_cloud, 1, {display:"block", opacity:0, delay:1.3});
-    TweenLite.to(right_light1, .1, {display:"block", delay:.6});
-    TweenLite.to(right_light2, .1, {display:"block", delay:.65});
+  
     TweenLite.to(right_light3, .1, {display:"block", delay:.7});
-    TweenLite.to(right_light1, .3, {display:"none",opacity:0, delay:.7});
-    TweenLite.to(right_light2, .3, {display:"none",opacity:0, delay:.7});
-    TweenLite.to(right_light3, .3, {display:"none",opacity:0, delay:.7});
+
+    TweenLite.to(right_light3, .3, {display:"none",opacity:0, delay:.8});
     //tv flicker
     TweenLite.to(flick2, .1, {display:"none", delay:.7});
     TweenLite.to(flick2, .05, {display:"block", delay:.75});
@@ -257,7 +253,9 @@ var BanTimeline = {
     // BanTimeline.replayOn = 1;
     BanTimeline.replayFunction();
     BanTimeline.glowBtn2 = 1;
-    TweenLite.to(final_frame, 0, {display:"block"});
+    TweenLite.to(finalBg, 0, {display:"block"});
+    TweenLite.to(finaltxt, 0, {display:"block"});
+    TweenLite.to(replay_container, 0, {display:"block"});
   }
 };
 
