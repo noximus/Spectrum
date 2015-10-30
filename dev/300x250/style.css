@@ -112,3 +112,19 @@ a:hover img {
 	position: absolute;
 	z-index: 20;
 }
+#replay_icon{
+	display: none;
+	position: absolute;
+	z-index: 100;
+	bottom: 3px;
+	right: 2px;
+}
+#replay_container{
+	display: block;
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	right: 0;
+	height: 20px;
+	width: 60px;
+}

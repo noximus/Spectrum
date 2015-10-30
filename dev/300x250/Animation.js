@@ -2,8 +2,11 @@ var BanTimeline = {
   glowBtn: 0,
   glowBtn2: 0,
   rainOn: 0,
+  replayOn: 0,
   container: document.getElementById("container"),
   final_frame: document.getElementById("final_frame"), 
+  replay_container: document.getElementById("replay_container"), 
+
   init: function () {
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
     document.getElementById("container").style.display = "block";
@@ -13,7 +16,16 @@ var BanTimeline = {
   reset: function () {
     
   },
-
+  replayFunction: function () {
+        TweenLite.to(replay_container, 0, {display: 'block'});
+        replay_container.onmouseover = function () {
+          TweenLite.to(replay_icon, 0, {display: 'block'});
+          TweenLite.to(replay_icon, 50, {rotation: -3600});
+        }
+        replay_container.onmouseout = function () {
+          TweenLite.to(replay_icon, 0, {display: 'none'});
+        }
+  },
   glow: function() {
     if(BanTimeline.glowBtn == 1){
       TweenLite.to(switch_now, 0, {display: 'block',opacity:1});
@@ -183,6 +195,8 @@ var BanTimeline = {
     TweenLite.delayedCall(.5, BanTimeline.frame5);
   },
   frame5: function () {
+    // BanTimeline.replayOn = 1;
+    BanTimeline.replayFunction();
     BanTimeline.glowBtn2 = 1;
     TweenLite.to(final_frame, 0, {display:"block"});
   }
@@ -190,5 +204,5 @@ var BanTimeline = {
 
 BanTimeline.init();
 BanTimeline.glow();
-// BanTimeline.glow2();
+
 
