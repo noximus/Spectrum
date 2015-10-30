@@ -14,7 +14,12 @@ var BanTimeline = {
     BanTimeline.frame1();
   },
   reset: function () {
-    
+    TweenLite.to(frame1, 0, {display: "none"});
+    TweenLite.to(frame3, 0, {display: 'none'});
+    TweenLite.to(frame4, 0, {display: 'none'});
+    TweenLite.to(final_frame, 0, {display: 'none'});
+        // TweenLite.to(replay_container, 0, {display: 'block'});
+    // TweenLite.to(replay_container, 0, {display: 'block'});    
   },
   replayFunction: function () {
         TweenLite.to(replay_container, 0, {display: 'block'});
@@ -24,6 +29,11 @@ var BanTimeline = {
         }
         replay_container.onmouseout = function () {
           TweenLite.to(replay_icon, 0, {display: 'none'});
+        }
+        replay_container.onclick = function (){
+          BanTimeline.reset();
+          BanTimeline.frame1();
+          console.log("replay banner");
         }
   },
   glow: function() {
