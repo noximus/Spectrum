@@ -89,26 +89,26 @@ var BanTimeline = {
     if(BanTimeline.glowBtn == 1){
       TweenLite.to(switch_now, 0, {display: 'block',opacity:1});
       container.onmouseover = function(){
-        TweenLite.to(switch_glow1, 0.2, {display: 'block',opacity:.5});
-        TweenLite.to(switch_glow2, 0.2, {display: 'block',opacity:.5, delay:.1});
-        TweenLite.to(switch_glow3, 0.2, {display: 'block',opacity:.5, delay:.15});
-        TweenLite.to(switch_glow4, 0.2, {display: 'block',opacity:.5, delay:.2});
-        TweenLite.to(switch_glow5, 0.2, {display: 'block',opacity:.5, delay:.25});
-        TweenLite.to(switch_glow1, 0.2, {opacity:0, delay:.25});
-        TweenLite.to(switch_glow2, 0.2, {opacity:0, delay:.2});
-        TweenLite.to(switch_glow3, 0.2, {opacity:0, delay:.3});
+        // TweenLite.to(switch_glow1, 0.2, {display: 'block',opacity:.5});
+        // TweenLite.to(switch_glow2, 0.2, {display: 'block',opacity:.5, delay:.1});
+        // TweenLite.to(switch_glow3, 0.2, {display: 'block',opacity:.5, delay:.15});
+        TweenLite.to(switch_glow4, 0.2, {display: 'block',opacity:.8, delay:.2});
+        TweenLite.to(switch_glow5, 0.2, {display: 'block',opacity:.8, delay:.25});
+        // TweenLite.to(switch_glow1, 0.2, {opacity:0, delay:.25});
+        // TweenLite.to(switch_glow2, 0.2, {opacity:0, delay:.2});
+        // TweenLite.to(switch_glow3, 0.2, {opacity:0, delay:.3});
         TweenLite.to(switch_glow4, 0.2, {opacity:0, delay:.4});
         TweenLite.to(switch_glow5, 0.2, {opacity:0, delay:.5});  
 
         if(BanTimeline.glowBtn2 == 1){
-            TweenLite.to(cta_shine1, 0.2, {display: 'block',opacity:.5});
-            TweenLite.to(cta_shine2, 0.2, {display: 'block',opacity:.5, delay:.1});
-            TweenLite.to(cta_shine3, 0.2, {display: 'block',opacity:.5, delay:.15});
-            TweenLite.to(cta_shine4, 0.2, {display: 'block',opacity:.5, delay:.2});
-            TweenLite.to(cta_shine5, 0.2, {display: 'block',opacity:.5, delay:.25});
-            TweenLite.to(cta_shine1, 0.2, {opacity:0, delay:.25});
-            TweenLite.to(cta_shine2, 0.2, {opacity:0, delay:.2});
-            TweenLite.to(cta_shine3, 0.2, {opacity:0, delay:.3});
+            // TweenLite.to(cta_shine1, 0.2, {display: 'block',opacity:.5});
+            // TweenLite.to(cta_shine2, 0.2, {display: 'block',opacity:.5, delay:.1});
+            // TweenLite.to(cta_shine3, 0.2, {display: 'block',opacity:.5, delay:.15});
+            TweenLite.to(cta_shine4, 0.2, {display: 'block',opacity:.8, delay:.2});
+            TweenLite.to(cta_shine5, 0.2, {display: 'block',opacity:.8, delay:.25});
+            // TweenLite.to(cta_shine1, 0.2, {opacity:0, delay:.25});
+            // TweenLite.to(cta_shine2, 0.2, {opacity:0, delay:.2});
+            // TweenLite.to(cta_shine3, 0.2, {opacity:0, delay:.3});
             TweenLite.to(cta_shine4, 0.2, {opacity:0, delay:.4});
             TweenLite.to(cta_shine5, 0.2, {opacity:0, delay:.5}); 
         } 
