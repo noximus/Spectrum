@@ -1,7 +1,9 @@
 var BanTimeline = {
   glowBtn: 0,
+  glowBtn2: 0,
   rainOn: 0,
   container: document.getElementById("container"),
+  final_frame: document.getElementById("final_frame"), 
   init: function () {
     // initial settings for banner frame 1.  In case banner needs to restart.  add as many as you can to CSS first so Banner doesn't jump
     document.getElementById("container").style.display = "block";
@@ -25,12 +27,23 @@ var BanTimeline = {
         TweenLite.to(switch_glow2, 0.2, {opacity:0, delay:.2});
         TweenLite.to(switch_glow3, 0.2, {opacity:0, delay:.3});
         TweenLite.to(switch_glow4, 0.2, {opacity:0, delay:.4});
-        TweenLite.to(switch_glow5, 0.2, {opacity:0, delay:.5});     
+        TweenLite.to(switch_glow5, 0.2, {opacity:0, delay:.5});  
+
+        if(BanTimeline.glowBtn2 == 1){
+            TweenLite.to(cta_shine1, 0.2, {display: 'block',opacity:.5});
+            TweenLite.to(cta_shine2, 0.2, {display: 'block',opacity:.5, delay:.1});
+            TweenLite.to(cta_shine3, 0.2, {display: 'block',opacity:.5, delay:.15});
+            TweenLite.to(cta_shine4, 0.2, {display: 'block',opacity:.5, delay:.2});
+            TweenLite.to(cta_shine5, 0.2, {display: 'block',opacity:.5, delay:.25});
+            TweenLite.to(cta_shine1, 0.2, {opacity:0, delay:.25});
+            TweenLite.to(cta_shine2, 0.2, {opacity:0, delay:.2});
+            TweenLite.to(cta_shine3, 0.2, {opacity:0, delay:.3});
+            TweenLite.to(cta_shine4, 0.2, {opacity:0, delay:.4});
+            TweenLite.to(cta_shine5, 0.2, {opacity:0, delay:.5}); 
+        } 
       }
     }
   },
-
-
   rain: function () {
       TweenLite.to(rain1, 0, {display:"block", top:-520,left:-150});  
       TweenLite.to(rain2, 0, {display:"block", top:-520,left:-150});
@@ -137,18 +150,45 @@ var BanTimeline = {
 
     TweenLite.to(rainOrShine, .4, {opacity:1,left:0, delay: 6, ease:Expo.easeOut});
 
-    TweenLite.delayedCall(2, BanTimeline.frame4);
+    TweenLite.delayedCall(9, BanTimeline.frame4);
   },
   frame4: function () {
-        
-    // TweenLite.delayedCall(3, BanTimeline.frame5);
+    TweenLite.to(end_lightning_1, .02, {display:"block", delay: 0});
+    TweenLite.to(end_lightning_1, .02, {display:"none", delay: .02});
+
+    TweenLite.to(end_lightning_2, .02, {display:"block", delay: .04});
+    TweenLite.to(end_lightning_2, .02, {display:"none", delay: .06});
+
+
+    TweenLite.to(end_lightning_3, .02, {display:"block", delay: .08});
+    TweenLite.to(end_lightning_3, .02, {display:"none", delay: .1});
+
+    TweenLite.to(end_lightning_4, .02, {display:"block", delay: .12});
+    TweenLite.to(end_lightning_4, .02, {display:"none", delay: .14});
+    
+    TweenLite.to(end_lightning_5, .02, {display:"block", delay: .16});
+    TweenLite.to(end_lightning_5, .02, {display:"none", delay: .18});
+
+    TweenLite.to(end_lightning_6, .02, {display:"block", delay: .2});
+    TweenLite.to(end_lightning_6, .02, {display:"none", delay: .22});
+    TweenLite.to(burst, .02, {display:"block", delay: .23});
+    TweenLite.to(whiteBlind, .01, {display:"block",opacity:1, delay: .24});
+
+    TweenLite.to(frame1, 0, {display:"none",opacity:0, delay: .24});
+    TweenLite.to(frame3, 0, {display:"none",opacity:0, delay: .24});
+    TweenLite.to(burst, 0, {display:"none",opacity:0, delay: .24});
+    TweenLite.to(whiteBlind, 1, {display:"none",opacity:0, delay: .25});
+
+
+    TweenLite.delayedCall(.5, BanTimeline.frame5);
   },
   frame5: function () {
-    // TweenLite.to(f5_img1, 2, {opacity:1, display: 'block', delay: 0, ease: Quad.easeOut});
+    BanTimeline.glowBtn2 = 1;
+    TweenLite.to(final_frame, 0, {display:"block"});
   }
 };
 
 BanTimeline.init();
 BanTimeline.glow();
-
+// BanTimeline.glow2();
 
