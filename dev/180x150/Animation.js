@@ -22,12 +22,8 @@ var BanTimeline = {
         TweenLite.to(cta_shine5, 0, {display: 'none',opacity:0});
         TweenLite.to(flick1, 0, {opacity:1});
         TweenLite.to(flick2, 0, {display:"none"});
-        TweenLite.to(left_cloud, 0, {display:"none", opacity:0});
-        TweenLite.to(right_cloud, 0, {display:"none", opacity:0});
-        TweenLite.to(left_light3, 0, {display:"none",opacity:1});
 
         TweenLite.to(whiteBg, 0, {display:"none"});
-        TweenLite.to(right_light3, 0, {display:"none", opacity:1});
         TweenLite.to(dontLet, 0, {opacity:0,left:300});
         TweenLite.to(noSignal2, 0, {display:"none"});
 
@@ -134,27 +130,10 @@ var BanTimeline = {
     TweenLite.to(flick2, .1, {display:"block", delay:.3});
     TweenLite.to(flick2, .1, {display:"none", delay:.45});
     TweenLite.to(flick2, .1, {display:"block", delay:.6});
-    //clouds flickering
-    TweenLite.to(left_cloud, .1, {display:"block", opacity:.9, delay:.3});
-    TweenLite.to(left_cloud, .1, {display:"block", opacity:.6, delay:.4});
-    TweenLite.to(left_cloud, 1, {display:"block", opacity:0, delay:1});
 
-    //left lightning
-  
-    TweenLite.to(left_light3, .1, {display:"block", delay:.4});
-
-    TweenLite.to(left_light3, .3, {display:"none",opacity:0, delay:.5});
     TweenLite.to(whiteBg, 0, {display:"block", delay:.4});
     TweenLite.to(whiteBg, .1, {display:"none", opacity:0, delay:.5});
 
-    //right lightning
-    TweenLite.to(right_cloud, .1, {display:"block", opacity:.9, delay:.6});
-    TweenLite.to(right_cloud, .1, {display:"block", opacity:.6, delay:.7});
-    TweenLite.to(right_cloud, 1, {display:"block", opacity:0, delay:1.3});
-  
-    TweenLite.to(right_light3, .1, {display:"block", delay:.7});
-
-    TweenLite.to(right_light3, .3, {display:"none",opacity:0, delay:.8});
     //tv flicker
     TweenLite.to(flick2, .1, {display:"none", delay:.7});
     TweenLite.to(flick2, .05, {display:"block", delay:.75});
