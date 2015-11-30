@@ -197,6 +197,6 @@ var BanTimeline = {
 };
 
 BanTimeline.init();
-// BanTimeline.glow();
+BanTimeline.glow();
 
 

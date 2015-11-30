@@ -67,7 +67,6 @@ var BanTimeline = {
         if(BanTimeline.glowBtn2 == 1){
           TweenLite.to(cta_shine5, 0.2, {display: 'block',opacity:.8, delay:.25});
           TweenLite.to(cta_shine5, 0.2, {opacity:0, delay:.5}); 
-          console.log('cta hovering');
         } 
       }
     }
@@ -141,8 +140,8 @@ var BanTimeline = {
     TweenLite.delayedCall(1.3, BanTimeline.frame3);
   },
   frame3: function () {
-    TweenLite.to(dontLet, .4, {opacity:1,top:0, delay: 0, ease:Expo.easeOut});
-    TweenLite.to(dontLet, .4, {opacity:0,top:-5, delay: 3,ease:Expo.easeOut});
+    TweenLite.to(dontLet, .8, {opacity:1,top:0, delay: 0, ease:Expo.easeOut});
+    TweenLite.to(dontLet, .8, {opacity:0,top:-60, delay: 3,ease:Expo.easeOut});
 
     TweenLite.to(flick1, .5, {opacity:1, delay:3});
     TweenLite.to(flick2, 0, {display:"none", delay:3});
@@ -150,10 +149,10 @@ var BanTimeline = {
 
     TweenLite.to(brightsky, .4, {display:"block", left:0, delay:3});
     TweenLite.to(brightsky, .4, {opacity:1, delay:3});
-    TweenLite.to(seeThings, .4, {opacity:1,top:0, delay: 3, ease:Expo.easeOut});
-    TweenLite.to(seeThings, .4, {opacity:0,top:-5, delay: 6, ease:Expo.easeOut});
+    TweenLite.to(seeThings, .8, {opacity:1,top:0, delay: 3.2, ease:Expo.easeOut});
+    TweenLite.to(seeThings, .8, {opacity:0,top:-60, delay: 6, ease:Expo.easeOut});
 
-    TweenLite.to(rainOrShine, .4, {opacity:1,top:0, delay: 6, ease:Expo.easeOut});
+    TweenLite.to(rainOrShine, .8, {opacity:1,top:0, delay: 6.2, ease:Expo.easeOut});
 
     TweenLite.delayedCall(9, BanTimeline.frame4);
   },
