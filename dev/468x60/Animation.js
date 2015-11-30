@@ -67,7 +67,6 @@ var BanTimeline = {
         if(BanTimeline.glowBtn2 == 1){
           TweenLite.to(cta_shine5, 0.2, {display: 'block',opacity:.8, delay:.25});
           TweenLite.to(cta_shine5, 0.2, {opacity:0, delay:.5}); 
-          console.log('cta hovering');
         } 
       }
     }
@@ -198,6 +197,6 @@ var BanTimeline = {
 };
 
 BanTimeline.init();
-// BanTimeline.glow();
+BanTimeline.glow();
 
 

@@ -6,8 +6,8 @@ body{
 }
 #container {
     position: absolute;
-    width:468px;
-    height:60px; 
+    width:728px;
+    height:90px; 
     background: url('background.jpg'); 
     border:solid;
     border-color:#000;
@@ -61,8 +61,8 @@ a:hover img {
 	position: absolute;
 	display: none;
 	z-index: 4;
-	width: 468px;
-	height: 60px;
+	width: 728px;
+	height: 90px;
 	
 }
 #rain1,#rain2,#rain3,#rain4,#rain5,#rain6,#rain7,#rain8,#rain9,#rain10,#rain11,#rain12,#rain13,#rain14,#rain15,#rain16{
@@ -87,8 +87,8 @@ a:hover img {
 	position: absolute;
 	background: url("background_1.jpg");
 	left: -100px;
-	height: 60px;
-	width: 468px;
+	height: 90px;
+	width: 728px;
 }
 #burst{
 	background: rgba(246,246,246,1);
@@ -107,11 +107,11 @@ a:hover img {
 }
 
 #noSignal2{
-	height: 41px;
-	width: 73px;
+	height: 61px;
+	width: 110px;
 	overflow: hidden;
-	top: 7px;
-	left: 45px;
+	top: 10px;
+	left: 97px;
 }
 #whiteBlind{
 	opacity: 0;
@@ -119,8 +119,8 @@ a:hover img {
 	display: none;
 	position: absolute;
 	z-index: 20;
-	width: 468px;
-	height: 60px;
+	width: 728px;
+	height: 90px;
 	
 }
 #cta_shine5{
@@ -133,8 +133,8 @@ a:hover img {
 	display: block;
 	position: absolute;
 	z-index: 100;
-	bottom: 1px;
-	right: 1px;
+	bottom: 2px;
+	right: 2px;
 }
 #replay_container{
 	display: none;
@@ -142,11 +142,11 @@ a:hover img {
 	z-index: 100;
 	bottom: 0;
 	right: 0;
-	font-size: 8px;
+	font-size: 10px;
 	font-family: arial;
 	color: white;
-	height: 13px;
-	width: 38px;
+	height: 16px;
+	width: 50px;
 	background: #04254e;
 }
 #replay_text{
@@ -155,8 +155,8 @@ a:hover img {
 }
 
 #finalBg{
-	width: 468px;
-	height: 60px;
+	width: 728px;
+	height: 90px;
 	background: url("background_2.jpg");
 	position: absolute;
 	display: none;
