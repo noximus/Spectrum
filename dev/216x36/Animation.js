@@ -16,39 +16,32 @@ var BanTimeline = {
   reset: function () {
     TweenLite.to(frame1, 0, {display: "block",opacity:1});
     TweenLite.to(frame3, 0, {display: 'block',opacity:1});
-        TweenLite.to(tvStand, 0, {display: 'block'});
-  
-        // TweenLite.to(switch_glow5, 0, {display: 'none', opacity:0});
-        // TweenLite.to(cta_shine5, 0, {display: 'none',opacity:0});
-        TweenLite.to(flick1, 0, {opacity:1});
-        TweenLite.to(flick2, 0, {display:"none"});
-       
-
-        TweenLite.to(whiteBg, 0, {display:"none"});
-    
-        TweenLite.to(dontLet, 0, {opacity:0,top:50});
-        TweenLite.to(noSignal2, 0, {display:"none"});
-        TweenLite.to(brightsky, 0, {display:"none",opacity:0});
-        TweenLite.to(seeThings, 0, {opacity:0,top:50});
-        TweenLite.to(rainOrShine, 0, {opacity:0,top:50});
-        TweenLite.to(end_lightning_1, 0, {display:"none"});
-        TweenLite.to(end_lightning_2, 0, {display:"none"});
-        TweenLite.to(end_lightning_3, 0, {display:"none"});
-        TweenLite.to(end_lightning_4, 0, {display:"none"});
-        TweenLite.to(end_lightning_5, 0, {display:"none"});
-        TweenLite.to(end_lightning_6, 0, {display:"none"});
-        TweenLite.to(burst, 0, {display:"none"});
-        TweenLite.to(whiteBlind, 0, {display:"none",opacity:0});
-        TweenLite.to(finalBg, 0, {display:"none"});
-        TweenLite.to(finaltxt, 0, {display:"none"});
-
-        BanTimeline.glowBtn= 0;
-        BanTimeline.glowBtn2=0;
-        BanTimeline.frame1replay();
-        // BanTimeline.rain();
-        // BanTimeline.glow();
-
-        TweenLite.to(replay_container, 0, {display: 'none'});    
+    TweenLite.to(tvStand, 0, {display: 'block'});
+    TweenLite.to(switch_glow5, 0, {display: 'none', opacity:0});
+    TweenLite.to(cta_shine5, 0, {display: 'none',opacity:0});
+    TweenLite.to(flick1, 0, {opacity:1});
+    TweenLite.to(flick2, 0, {display:"none"});
+    TweenLite.to(whiteBg, 0, {display:"none"});
+    TweenLite.to(dontLet, 0, {opacity:0,top:50});
+    TweenLite.to(noSignal2, 0, {display:"none"});
+    TweenLite.to(brightsky, 0, {display:"none",opacity:0});
+    TweenLite.to(seeThings, 0, {opacity:0,top:50});
+    TweenLite.to(rainOrShine, 0, {opacity:0,top:50});
+    TweenLite.to(end_lightning_1, 0, {display:"none"});
+    TweenLite.to(end_lightning_2, 0, {display:"none"});
+    TweenLite.to(end_lightning_3, 0, {display:"none"});
+    TweenLite.to(end_lightning_4, 0, {display:"none"});
+    TweenLite.to(end_lightning_5, 0, {display:"none"});
+    TweenLite.to(end_lightning_6, 0, {display:"none"});
+    TweenLite.to(burst, 0, {display:"none"});
+    TweenLite.to(whiteBlind, 0, {display:"none",opacity:0});
+    TweenLite.to(finalBg, 0, {display:"none"});
+    TweenLite.to(finaltxt, 0, {display:"none"});
+    BanTimeline.glowBtn= 0;
+    BanTimeline.glowBtn2=0;
+    BanTimeline.frame1replay();
+    BanTimeline.glow();
+    TweenLite.to(replay_container, 0, {display: 'none'});    
   },
   replayFunction: function () {
         TweenLite.to(replay_container, 0, {display: 'block'});
@@ -61,7 +54,6 @@ var BanTimeline = {
         }
         replay_container.onclick = function (){
           BanTimeline.reset();
-          // BanTimeline.frame1();
           console.log("replay banner");
         }
   },
@@ -111,21 +103,12 @@ var BanTimeline = {
       TweenLite.to(rain13, 1.3, {display:"block", top:50,left:-30, delay:2.4});
       TweenLite.to(rain14, 1.3, {display:"block", top:50,left:-30, delay:2.6});
     }
-    TweenLite.delayedCall(2.8, BanTimeline.rain);
+    TweenLite.delayedCall(2.6, BanTimeline.rain);
   },
-  rain2: function(){
-    if(BanTimeline.rainOn == 1){
-      TweenLite.to(rain15, 1.3, {display:"block", top:50,left:-30, delay:0});
-      TweenLite.to(rain16, 1.3, {display:"block", top:50,left:-30, delay:.4});
-    }
-    TweenLite.delayedCall(2.5, BanTimeline.rain2);
-  },
-
   frame1: function () {
     BanTimeline.glowBtn = 1;
     BanTimeline.rainOn = 1; 
     TweenLite.delayedCall(0, BanTimeline.rain);
-    TweenLite.delayedCall(0, BanTimeline.rain2);
     TweenLite.delayedCall(1, BanTimeline.frame2);
   },
   frame1replay: function () {
