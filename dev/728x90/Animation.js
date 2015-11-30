@@ -109,12 +109,12 @@ var BanTimeline = {
     BanTimeline.glowBtn = 1;
     BanTimeline.rainOn = 1; 
     TweenLite.delayedCall(0, BanTimeline.rain);
-    TweenLite.delayedCall(1, BanTimeline.frame2);
+    TweenLite.delayedCall(.2, BanTimeline.frame2);
   },
   frame1replay: function () {
     BanTimeline.glowBtn = 1;
     BanTimeline.rainOn = 1;
-    TweenLite.delayedCall(1, BanTimeline.frame2); 
+    TweenLite.delayedCall(.2, BanTimeline.frame2); 
   },
   frame2: function () {
     TweenLite.to(flick1, .1, {opacity:0, delay:.3});
