@@ -175,7 +175,7 @@ a:hover img {
 #finalBg{
 	height: 250px;
 	width: 300px;
-	background: #31a3e1;
+	background: url("background_1.jpg");
 	position: absolute;
 	display: none;
 }
