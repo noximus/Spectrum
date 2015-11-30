@@ -36,7 +36,7 @@ a:hover img {
 	display: none;
 	z-index: 3;
 }
-#tvStand, #switch_now{
+#tvStand{
 	z-index: 10;
 	display: block;
 	position: absolute;

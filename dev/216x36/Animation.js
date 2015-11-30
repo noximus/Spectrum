@@ -18,21 +18,19 @@ var BanTimeline = {
     TweenLite.to(frame3, 0, {display: 'block',opacity:1});
         TweenLite.to(tvStand, 0, {display: 'block'});
   
-        TweenLite.to(switch_glow5, 0, {display: 'none', opacity:0});
-        TweenLite.to(cta_shine5, 0, {display: 'none',opacity:0});
+        // TweenLite.to(switch_glow5, 0, {display: 'none', opacity:0});
+        // TweenLite.to(cta_shine5, 0, {display: 'none',opacity:0});
         TweenLite.to(flick1, 0, {opacity:1});
         TweenLite.to(flick2, 0, {display:"none"});
        
 
         TweenLite.to(whiteBg, 0, {display:"none"});
     
-        TweenLite.to(dontLet, 0, {opacity:0,left:300});
+        TweenLite.to(dontLet, 0, {opacity:0,top:50});
         TweenLite.to(noSignal2, 0, {display:"none"});
-
-        // TweenLite.to(logo, 0, {display:"none",opacity:0});
         TweenLite.to(brightsky, 0, {display:"none",opacity:0});
-        TweenLite.to(seeThings, 0, {opacity:0,left:300});
-        TweenLite.to(rainOrShine, 0, {opacity:0,left:300});
+        TweenLite.to(seeThings, 0, {opacity:0,top:50});
+        TweenLite.to(rainOrShine, 0, {opacity:0,top:50});
         TweenLite.to(end_lightning_1, 0, {display:"none"});
         TweenLite.to(end_lightning_2, 0, {display:"none"});
         TweenLite.to(end_lightning_3, 0, {display:"none"});
