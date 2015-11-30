@@ -100,7 +100,7 @@ a:hover img {
 	background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 0%, rgba(170,226,255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#aae2ff', GradientType=1 );
 }
-#end_lightning_1,#end_lightning_2,#end_lightning_3,#end_lightning_4,#end_lightning_5,#end_lightning_6,#burst,#finalBg,#finaltxt{
+#end_lightning_1,#end_lightning_2,#end_lightning_3,#end_lightning_4,#end_lightning_5,#burst,#finalBg,#finaltxt{
 	display: none;
 	position: absolute;
 	z-index: 15;

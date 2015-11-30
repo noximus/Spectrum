@@ -137,7 +137,7 @@ var BanTimeline = {
     TweenLite.to(noSignalImg, 0, {scaleX:1.5, delay:1.4});
     TweenLite.to(noSignalImg, 0, {scaleX:1.2, delay:1.45});
     TweenLite.to(noSignalImg, 0, {scaleX:1, delay:1.6});
-    TweenLite.delayedCall(1.3, BanTimeline.frame3);
+    TweenLite.delayedCall(.8, BanTimeline.frame3);
   },
   frame3: function () {
     TweenLite.to(dontLet, .8, {opacity:1,top:0, delay: 0, ease:Expo.easeOut});
@@ -173,8 +173,6 @@ var BanTimeline = {
     TweenLite.to(end_lightning_5, .02, {display:"block", delay: .16});
     TweenLite.to(end_lightning_5, .02, {display:"none", delay: .18});
 
-    TweenLite.to(end_lightning_6, .02, {display:"block", delay: .2});
-    TweenLite.to(end_lightning_6, .02, {display:"none", delay: .22});
     TweenLite.to(burst, .02, {display:"block", delay: .23});
     TweenLite.to(whiteBlind, .01, {display:"block",opacity:1, delay: .24});
 
