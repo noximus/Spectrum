@@ -54,10 +54,10 @@ var BanTimeline = {
         TweenLite.to(replay_container, 0, {display: 'block'});
         replay_container.onmouseover = function () {
           TweenLite.to(replay_icon, 0, {display: 'block'});
-          TweenLite.to(replay_icon, 30, {rotation: -3600});
+          TweenLite.to(replay_icon, 1, {rotation: -360});
         }
         replay_container.onmouseout = function () {
-          TweenLite.to(replay_icon, 0, {display: 'none'});
+          TweenLite.to(replay_icon, 0, {rotation:0});
         }
         replay_container.onclick = function (){
           BanTimeline.reset();
@@ -80,36 +80,36 @@ var BanTimeline = {
     }
   },
   rain: function () {
-      TweenLite.to(rain1, 0, {display:"block", top:-520,left:100});  
-      TweenLite.to(rain2, 0, {display:"block", top:-520,left:100});
-      TweenLite.to(rain3, 0, {display:"block", top:-520,left:100});
-      TweenLite.to(rain4, 0, {display:"block", top:-520,left:100});
-      TweenLite.to(rain5, 0, {display:"block", top:-520,left:100});
-      TweenLite.to(rain6, 0, {display:"block", top:-520,left:100});
-      TweenLite.to(rain7, 0, {display:"block", top:-520,left:100});
-      TweenLite.to(rain8, 0, {display:"block", top:-520,left:100});
-      TweenLite.to(rain9, 0, {display:"block", top:-520,left:100});
-      TweenLite.to(rain10, 0, {display:"block", top:-520,left:100, delay:1});
-      TweenLite.to(rain11, 0, {display:"block", top:-520,left:100, delay:1});
-      TweenLite.to(rain12, 0, {display:"block", top:-520,left:100, delay:1});
-      TweenLite.to(rain13, 0, {display:"block", top:-520,left:100, delay:1});
-      TweenLite.to(rain14, 0, {display:"block", top:-520,left:100, delay:1});
+      TweenLite.to(rain1, 0, {display:"block", top:-300,left:100});  
+      TweenLite.to(rain2, 0, {display:"block", top:-300,left:100});
+      TweenLite.to(rain3, 0, {display:"block", top:-300,left:100});
+      TweenLite.to(rain4, 0, {display:"block", top:-300,left:100});
+      TweenLite.to(rain5, 0, {display:"block", top:-300,left:100});
+      TweenLite.to(rain6, 0, {display:"block", top:-300,left:100});
+      TweenLite.to(rain7, 0, {display:"block", top:-300,left:100});
+      TweenLite.to(rain8, 0, {display:"block", top:-300,left:100});
+      TweenLite.to(rain9, 0, {display:"block", top:-300,left:100});
+      TweenLite.to(rain10, 0, {display:"block", top:-300,left:100, delay:1});
+      TweenLite.to(rain11, 0, {display:"block", top:-300,left:100, delay:1});
+      TweenLite.to(rain12, 0, {display:"block", top:-300,left:100, delay:1});
+      TweenLite.to(rain13, 0, {display:"block", top:-300,left:100, delay:1});
+      TweenLite.to(rain14, 0, {display:"block", top:-300,left:100, delay:1});
     if(BanTimeline.rainOn == 1)
     {
-      TweenLite.to(rain1, 1.3, {display:"block", top:300,left:-30, delay:0});  
-      TweenLite.to(rain2, 1.3, {display:"block", top:300,left:-30, delay:.2});
-      TweenLite.to(rain3, 1.3, {display:"block", top:300,left:-30, delay:.4});
-      TweenLite.to(rain4, 1.3, {display:"block", top:300,left:-30, delay:.6});
-      TweenLite.to(rain5, 1.3, {display:"block", top:300,left:-30, delay:.8});
-      TweenLite.to(rain6, 1.3, {display:"block", top:300,left:-30, delay:1});
-      TweenLite.to(rain7, 1.3, {display:"block", top:300,left:-30, delay:1.2});
-      TweenLite.to(rain8, 1.3, {display:"block", top:300,left:-30, delay:1.4});
-      TweenLite.to(rain9, 1.3, {display:"block", top:300,left:-30, delay:1.6});
-      TweenLite.to(rain10, 1.3, {display:"block", top:300,left:-30, delay:1.8});
-      TweenLite.to(rain11, 1.3, {display:"block", top:300,left:-30, delay:2});
-      TweenLite.to(rain12, 1.3, {display:"block", top:300,left:-30, delay:2.2});
-      TweenLite.to(rain13, 1.3, {display:"block", top:300,left:-30, delay:2.4});
-      TweenLite.to(rain14, 1.3, {display:"block", top:300,left:-30, delay:2.6});
+      TweenLite.to(rain1, 1.3, {display:"block", top:250,left:-80, delay:0});  
+      TweenLite.to(rain2, 1.3, {display:"block", top:250,left:-80, delay:.2});
+      TweenLite.to(rain3, 1.3, {display:"block", top:250,left:-80, delay:.4});
+      TweenLite.to(rain4, 1.3, {display:"block", top:250,left:-80, delay:.6});
+      TweenLite.to(rain5, 1.3, {display:"block", top:250,left:-80, delay:.8});
+      TweenLite.to(rain6, 1.3, {display:"block", top:250,left:-80, delay:1});
+      TweenLite.to(rain7, 1.3, {display:"block", top:250,left:-80, delay:1.2});
+      TweenLite.to(rain8, 1.3, {display:"block", top:250,left:-80, delay:1.4});
+      TweenLite.to(rain9, 1.3, {display:"block", top:250,left:-80, delay:1.6});
+      TweenLite.to(rain10, 1.3, {display:"block", top:250,left:-80, delay:1.8});
+      TweenLite.to(rain11, 1.3, {display:"block", top:250,left:-80, delay:2});
+      TweenLite.to(rain12, 1.3, {display:"block", top:250,left:-80, delay:2.2});
+      TweenLite.to(rain13, 1.3, {display:"block", top:250,left:-80, delay:2.4});
+      TweenLite.to(rain14, 1.3, {display:"block", top:250,left:-80, delay:2.6});
     }
     TweenLite.delayedCall(2.3, BanTimeline.rain);
   },

@@ -54,7 +54,7 @@ var BanTimeline = {
         TweenLite.to(replay_container, 0, {display: 'block'});
         replay_container.onmouseover = function () {
           TweenLite.to(replay_icon, 0, {display: 'block'});
-          TweenLite.to(replay_icon, 50, {rotation: -3600});
+          TweenLite.to(replay_icon, 1, {rotation: -360});
         }
         replay_container.onmouseout = function () {
           TweenLite.to(replay_icon, 0, {rotation: 0});
@@ -80,25 +80,25 @@ var BanTimeline = {
     }
   },
   rain: function () {
-      TweenLite.to(rain1, 0, {display:"block", top:-50,left:0});  
-      TweenLite.to(rain2, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain3, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain4, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain5, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain6, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain7, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain8, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain9, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain10, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain11, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain12, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain13, 0, {display:"block", top:-50,left:0});
-      TweenLite.to(rain14, 0, {display:"block", top:-50,left:0});
+      TweenLite.to(rain1, 0, {display:"block", top:-80,left:0});  
+      TweenLite.to(rain2, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain3, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain4, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain5, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain6, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain7, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain8, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain9, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain10, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain11, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain12, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain13, 0, {display:"block", top:-80,left:0});
+      TweenLite.to(rain14, 0, {display:"block", top:-80,left:0});
     if(BanTimeline.rainOn == 1)
     {
       TweenLite.to(rain1, 1.3, {display:"block", top:50,left:-30, delay:0});  
       TweenLite.to(rain2, 1.3, {display:"block", top:50,left:-30, delay:.2});
-      TweenLite.to(rain3, 1.3, {display:"block", top:50,left:-30, delay:.4});
+      TweenLite.to(rain3, 1.1, {display:"block", top:50,left:-30, delay:.4});
       TweenLite.to(rain4, 1.3, {display:"block", top:50,left:-30, delay:.6});
       TweenLite.to(rain5, 1.3, {display:"block", top:50,left:-30, delay:.8});
       TweenLite.to(rain6, 1.3, {display:"block", top:50,left:-30, delay:1});
@@ -111,14 +111,22 @@ var BanTimeline = {
       TweenLite.to(rain13, 1.3, {display:"block", top:50,left:-30, delay:2.4});
       TweenLite.to(rain14, 1.3, {display:"block", top:50,left:-30, delay:2.6});
     }
-    TweenLite.delayedCall(2.3, BanTimeline.rain);
+    TweenLite.delayedCall(2.8, BanTimeline.rain);
+  },
+  rain2: function(){
+    if(BanTimeline.rainOn == 1){
+      TweenLite.to(rain15, 1.3, {display:"block", top:50,left:-30, delay:0});
+      TweenLite.to(rain16, 1.3, {display:"block", top:50,left:-30, delay:.4});
+    }
+    TweenLite.delayedCall(2.5, BanTimeline.rain2);
   },
 
   frame1: function () {
     BanTimeline.glowBtn = 1;
     BanTimeline.rainOn = 1; 
     TweenLite.delayedCall(0, BanTimeline.rain);
-    TweenLite.delayedCall(1, BanTimeline.frame2); 
+    TweenLite.delayedCall(0, BanTimeline.rain2);
+    TweenLite.delayedCall(1, BanTimeline.frame2);
   },
   frame1replay: function () {
     BanTimeline.glowBtn = 1;
@@ -156,8 +164,8 @@ var BanTimeline = {
     TweenLite.to(flick2, 0, {display:"none", delay:3});
     TweenLite.to(noSignal2, 0, {display:"none", delay:3});
 
-    TweenLite.to(brightsky, .4, {display:"block", width: 216,opacity:1, delay:3});
-    TweenLite.to(brightsky, 1.5, {opacity:.8, delay:3});
+    TweenLite.to(brightsky, .4, {display:"block", left:0, delay:3});
+    TweenLite.to(brightsky, .4, {opacity:1, delay:3});
     TweenLite.to(seeThings, .4, {opacity:1,top:0, delay: 3, ease:Expo.easeOut});
     TweenLite.to(seeThings, .4, {opacity:0,top:-5, delay: 6, ease:Expo.easeOut});
 

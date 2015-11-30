@@ -47,10 +47,10 @@ var BanTimeline = {
         TweenLite.to(replay_container, 0, {display: 'block'});
         replay_container.onmouseover = function () {
           TweenLite.to(replay_icon, 0, {display: 'block'});
-          TweenLite.to(replay_icon, 50, {rotation: -3600});
+          TweenLite.to(replay_icon, 1, {rotation: -360});
         }
         replay_container.onmouseout = function () {
-          TweenLite.to(replay_icon, 0, {display: 'none'});
+          TweenLite.to(replay_icon, 0, {rotation: 0});
         }
         replay_container.onclick = function (){
           BanTimeline.reset();
@@ -64,7 +64,7 @@ var BanTimeline = {
         TweenLite.to(switch_glow5, 0.2, {display: 'block',opacity:.8, delay:.25});
         TweenLite.to(switch_glow5, 0.2, {opacity:0, delay:.5});  
         if(BanTimeline.glowBtn2 == 1){
-          TweenLite.to(cta_shine5, 0.2, {display: 'block',opacity:.8, delay:.25});
+          TweenLite.to(cta_shine5, 0.2, {display: 'block',opacity:1, delay:.25});
           TweenLite.to(cta_shine5, 0.2, {opacity:0, delay:.5}); 
         } 
       }

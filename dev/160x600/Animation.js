@@ -45,7 +45,7 @@ var BanTimeline = {
         TweenLite.to(finaltxt, 0, {display:"none"});
         BanTimeline.glowBtn= 0;
         BanTimeline.glowBtn2=0;
-        // BanTimeline.rainOn=0;
+        BanTimeline.rain();
         BanTimeline.frame1replay();
         TweenLite.to(replay_container, 0, {display: 'none'});    
   },
@@ -53,10 +53,10 @@ var BanTimeline = {
         TweenLite.to(replay_container, 0, {display: 'block'});
         replay_container.onmouseover = function () {
           TweenLite.to(replay_icon, 0, {display: 'block'});
-          TweenLite.to(replay_icon, 50, {rotation: -3600});
+          TweenLite.to(replay_icon, 1, {rotation: -360});
         }
         replay_container.onmouseout = function () {
-          TweenLite.to(replay_icon, 0, {display: 'none'});
+          TweenLite.to(replay_icon, 0, {rotation: 0});
         }
         replay_container.onclick = function (){
           BanTimeline.reset();
@@ -156,7 +156,7 @@ var BanTimeline = {
   },
   frame1replay: function () {
     BanTimeline.glowBtn = 1;
-    BanTimeline.rainOn = 1; 
+    // BanTimeline.rainOn = 1; 
     TweenLite.delayedCall(1, BanTimeline.frame2); 
   },
   frame2: function () {
@@ -233,7 +233,7 @@ var BanTimeline = {
   frame5: function () {
     BanTimeline.replayFunction();
     BanTimeline.glowBtn2 = 1;
-    BanTimeline.rainOn = 0;
+    // BanTimeline.rainOn = 0;
     TweenLite.to(finalBg, 0, {display:"block"});
     TweenLite.to(finaltxt, 0, {display:"block"});
     TweenLite.to(replay_container, 0, {display:"block"});
