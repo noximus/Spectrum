@@ -112,12 +112,12 @@ var BanTimeline = {
     BanTimeline.glowBtn = 1;
     BanTimeline.rainOn = 1; 
     TweenLite.delayedCall(0, BanTimeline.rain);
-    TweenLite.delayedCall(1, BanTimeline.frame2);
+    TweenLite.delayedCall(.5, BanTimeline.frame2);
   },
   frame1replay: function () {
     BanTimeline.glowBtn = 1;
     BanTimeline.rainOn = 1;
-    TweenLite.delayedCall(1, BanTimeline.frame2); 
+    TweenLite.delayedCall(.5, BanTimeline.frame2); 
   },
   frame2: function () {
     TweenLite.to(flick1, .1, {opacity:0, delay:.3});
@@ -140,7 +140,7 @@ var BanTimeline = {
     TweenLite.to(noSignalImg, 0, {scaleX:1.5, delay:1.4});
     TweenLite.to(noSignalImg, 0, {scaleX:1.2, delay:1.45});
     TweenLite.to(noSignalImg, 0, {scaleX:1, delay:1.6});
-    TweenLite.delayedCall(1.3, BanTimeline.frame3);
+    TweenLite.delayedCall(.8, BanTimeline.frame3);
   },
   frame3: function () {
     TweenLite.to(dontLet, .4, {opacity:1,top:0, delay: 0, ease:Expo.easeOut});
