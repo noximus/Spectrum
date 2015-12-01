@@ -29,13 +29,24 @@ a:hover img {
 	outline:none;
 }
 
-#logo,#left_cloud,#right_cloud,#switch_now,#switch_glow1,#switch_glow2,#switch_glow3,#switch_glow4,#switch_glow5{
+#logo,#left_cloud,#right_cloud,#switch_now{
 	position: absolute;
 	top: 0;
 	left: 0;
 	opacity: 0;
 	display: none;
 	z-index: 3;
+}
+#switch_glow5{
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+    top:0px;
+    right: 1px;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    z-index: 10;
 }
 #tvStand, #switch_now{
 	z-index: 10;
@@ -58,7 +69,7 @@ a:hover img {
 	display: block;
 	position: absolute;
 }
-#flick2,#noSignal1,#noSignal2,#logo{
+#flick2,#noSignal2,#logo{
 	z-index: 12;
 	display: none;
 	position: absolute;
@@ -118,10 +129,6 @@ a:hover img {
 	position: absolute;
 	z-index: 15;
 }
-#noSignal1{
-	top:65px;
-	left: 44px;
-}
 #noSignal2{
 	top:56px;
 	left: 45px;
@@ -142,14 +149,19 @@ a:hover img {
 	height: 250px;
 	width: 300px;
 }
-#cta_shine1,#cta_shine2,#cta_shine3,#cta_shine4,#cta_shine5{
+#cta_shine5{
 	display: none;
 	opacity: 0;
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+    bottom: 3px;
+    right: -2px;
 	position: absolute;
 	z-index: 20;
 }
 #replay_icon{
-	display: none;
+	display: block;
 	position: absolute;
 	z-index: 100;
 	bottom: 3px;

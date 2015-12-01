@@ -58,10 +58,10 @@ var BanTimeline = {
         TweenLite.to(replay_container, 0, {display: 'block'});
         replay_container.onmouseover = function () {
           TweenLite.to(replay_icon, 0, {display: 'block'});
-          TweenLite.to(replay_icon, 50, {rotation: -3600});
+          TweenLite.to(replay_icon, 1, {rotation: -360});
         }
         replay_container.onmouseout = function () {
-          TweenLite.to(replay_icon, 0, {display: 'none'});
+          TweenLite.to(replay_icon, 0, {rotation: 0});
         }
         replay_container.onclick = function (){
           BanTimeline.reset();
@@ -69,7 +69,7 @@ var BanTimeline = {
           console.log("replay banner");
         }
   },
-    glow: function() {
+  glow: function() {
     if(BanTimeline.glowBtn == 1){
       TweenLite.to(switch_now, 0, {display: 'block',opacity:1});
       container.onmouseover = function(){      
