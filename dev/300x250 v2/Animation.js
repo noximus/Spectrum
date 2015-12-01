@@ -82,7 +82,7 @@ var BanTimeline = {
           TweenLite.to(cta_shine5, .4, {scaleX:1, scaleY:1.1, delay:0});
           TweenLite.to(cta_shine5, .3, {opacity:0, delay:.3});
           TweenLite.to(cta_shine5, 0, {scaleX:0, scaleY:0, delay:.7});
-        } 
+        }
       }
     }
   },
