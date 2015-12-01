@@ -33,13 +33,20 @@ a:hover img {
 	outline:none;
 }
 
-#left_cloud,#right_cloud,#switch_now{
+#right_cloud,#switch_now{
 	position: absolute;
 	top: 0;
 	left: 0;
 	opacity: 0;
 	display: none;
 	z-index: 3;
+}
+#left_cloud{
+	display: none;
+	z-index: 3;
+	position: absolute;
+	left: -160px;
+	opacity: 0;
 }
 #switch_glow5{
 	-ms-transform: scale(0,0); /* IE 9 */
@@ -71,9 +78,18 @@ a:hover img {
 #flick1{
 	z-index: 11;
 	display: block;
+	top: 154px;
+	left: 45px;
 	position: absolute;
 }
-#flick2,#noSignal2,#logo{
+#flick2{
+	z-index: 11;
+	display: none;
+	top: 154px;
+	left: 45px;
+	position: absolute;
+}
+#noSignal2,#logo{
 	z-index: 16;
 	display: none;
 	position: absolute;
