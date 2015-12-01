@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
+img{margin-left:-1px;}
 #container {
     position: absolute;
     width:468px;
