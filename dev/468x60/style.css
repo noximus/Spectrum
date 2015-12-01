@@ -29,12 +29,15 @@ a:hover img {
 	outline:none;
 }
 #switch_glow5{
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	display: none;
-	z-index: 10;
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+    top:21px;
+    right: 3px;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    z-index: 10;
 }
 #tvStand{
 	z-index: 10;
@@ -126,6 +129,11 @@ a:hover img {
 #cta_shine5{
 	display: none;
 	opacity: 0;
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+    top:0px;
+    right: 1px;
 	position: absolute;
 	z-index: 20;
 }

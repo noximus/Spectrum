@@ -29,12 +29,15 @@ a:hover img {
 	outline:none;
 }
 #switch_glow5{
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	display: none;
-	z-index: 10;
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+    top:41px;
+    right: -2px;
+    position: absolute;
+    opacity: 0;
+    display: block;
+    z-index: 10;
 }
 #tvStand{
 	z-index: 10;
@@ -120,12 +123,16 @@ a:hover img {
 	position: absolute;
 	z-index: 20;
 	width: 728px;
-	height: 90px;
-	
+	height: 90px;	
 }
 #cta_shine5{
 	display: none;
 	opacity: 0;
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+    top:2px;
+    right: 1px;
 	position: absolute;
 	z-index: 20;
 }
