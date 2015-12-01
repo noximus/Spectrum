@@ -68,13 +68,16 @@ var BanTimeline = {
   glow: function() {
     if(BanTimeline.glowBtn == 1){
       TweenLite.to(switch_now, 0, {display: 'block',opacity:1});
-      container.onmouseover = function(){
-        TweenLite.to(switch_glow5, 0.2, {display: 'block',opacity:.8, delay:.25});
-        TweenLite.to(switch_glow5, 0.2, {opacity:0, delay:.5});  
-
+      container.onmouseover = function(){      
+        TweenLite.to(switch_glow5, 0, {display: 'block',opacity:1});
+        TweenLite.to(switch_glow5, 0.4, {scaleX:1, scaleY:1, delay:0});
+        TweenLite.to(switch_glow5, 0.3, {opacity: 0, delay:.3}); 
+        TweenLite.to(switch_glow5, 0, {scaleY:0, scaleX:0, delay:.7});  
         if(BanTimeline.glowBtn2 == 1){
-          TweenLite.to(cta_shine5, 0.2, {display: 'block',opacity:.8, delay:.25});
-          TweenLite.to(cta_shine5, 0.2, {opacity:0, delay:.5}); 
+          TweenLite.to(cta_shine5, 0, {display: 'block',opacity:1});
+          TweenLite.to(cta_shine5, .4, {scaleX:1, scaleY:1.1, delay:0});
+          TweenLite.to(cta_shine5, .3, {opacity:0, delay:.3});
+          TweenLite.to(cta_shine5, 0, {scaleX:0, scaleY:0, delay:.7});
         } 
       }
     }

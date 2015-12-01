@@ -30,13 +30,24 @@ a:hover img {
 	outline:none;
 }
 
-#logo,#switch_now,#switch_glow5{
+#logo,#switch_now{
 	position: absolute;
 	top: 0;
 	left: 0;
 	opacity: 0;
 	display: none;
 	z-index: 10;
+}
+#switch_glow5{
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+    top: 0;
+    right: -2px;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    z-index: 10;
 }
 #tvStand, #switch_now{
 	z-index: 10;
@@ -121,6 +132,11 @@ a:hover img {
 #cta_shine5{
 	display: none;
 	opacity: 0;
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+    top: 109px;
+    right: -2px;
 	position: absolute;
 	z-index: 20;
 }
