@@ -67,8 +67,14 @@ a:hover img {
 }
 #flick1{
 	z-index: 11;
+	top: 152px;
+	left: 14px;
 	display: block;
 	position: absolute;
+}
+#flick2{
+	top: 152px;
+	left: 14px;
 }
 #flick2,#noSignal2,#logo{
 	z-index: 12;
