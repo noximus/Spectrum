@@ -148,7 +148,7 @@ var BanTimeline = {
     TweenLite.delayedCall(1, BanTimeline.frame2); 
   },
   frame2: function () {
-    TweenLite.to(flick1, .1, {opacity:0, delay:.3});
+    // TweenLite.to(flick1, .1, {opacity:0, delay:.3});
     TweenLite.to(flick2, .1, {display:"block", delay:.3});
     TweenLite.to(flick2, .1, {display:"none", delay:.45});
     TweenLite.to(flick2, .1, {display:"block", delay:.6});
