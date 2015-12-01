@@ -41,7 +41,7 @@ a:hover img {
 	-ms-transform: scale(0,0); /* IE 9 */
     -webkit-transform: scale(0,0); /* Safari */
     transform: scale(0,0);
-    top: 240px;
+    top: 535px;
     position: absolute;
     opacity: 0;
     display: none;
@@ -134,7 +134,7 @@ a:hover img {
 	-ms-transform: scale(0,0); /* IE 9 */
     -webkit-transform: scale(0,0); /* Safari */
     transform: scale(0,0);
-    top: 220px;
+    top: 507px;
 	position: absolute;
 	z-index: 20;
 }
