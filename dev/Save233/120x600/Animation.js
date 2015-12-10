@@ -9,11 +9,12 @@ var BanTimeline = {
     BanTimeline.frame1();
   },
   reset: function () {
-       TweenLite.to(frame1txt, 0, {opacity:1, left:0});
-       TweenLite.to(frame2txt, 0, {opacity:0, left:120});
-       TweenLite.to(frame3txt, 0, {opacity:0, left:120});
-       TweenLite.to(frame4txt, 0, {opacity:0, left:120});
-       BanTimeline.init();
+      TweenLite.to(frame1txt, 0, {opacity:1, left:0});
+      TweenLite.to(frame2txt, 0, {opacity:0, left:120});
+      TweenLite.to(frame3txt, 0, {opacity:0, left:120});
+      TweenLite.to(frame4txt, 0, {opacity:0, left:120});
+      TweenLite.to(restrictions, 0, {opacity:0});
+      BanTimeline.init();
   },
   replayFunction: function () {
         TweenLite.to(replay_container, 0, {display: 'block'});
