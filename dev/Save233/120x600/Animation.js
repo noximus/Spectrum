@@ -14,6 +14,7 @@ var BanTimeline = {
       TweenLite.to(frame3txt, 0, {opacity:0, left:120});
       TweenLite.to(frame4txt, 0, {opacity:0, left:120});
       TweenLite.to(restrictions, 0, {opacity:0});
+      TweenLite.to(replay_container, 0, {display: 'none'});
       BanTimeline.init();
   },
   replayFunction: function () {
@@ -48,7 +49,7 @@ var BanTimeline = {
     TweenLite.to(frame4txt, .5, {opacity:1, left:0});
     TweenLite.to(restrictions, .5, {opacity:1});
     BanTimeline.replayFunction();
-    TweenLite.to(replay_container, 0, {opacity:1});
+    TweenLite.to(replay_container, 0, {display:"block",opacity:1});
   }
 };
 
