@@ -21,7 +21,7 @@ var BanTimeline = {
         TweenLite.to(replay_container, 0, {display: 'block'});
         TweenLite.to(replay_icon, 0, {opacity:1});
         replay_container.onmouseover = function () {
-          TweenLite.to(replay_container, 1, {rotation: -360});
+          TweenLite.to(replay_container, 1, {rotation: -360, transformOrigin:"50% 56%"});
         }
         replay_container.onmouseout = function () {
           TweenLite.to(replay_container, 0, {rotation: 0});

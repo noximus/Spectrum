@@ -21,7 +21,7 @@ var BanTimeline = {
         TweenLite.to(replay_container, 0, {display: 'block'});
         TweenLite.to(replay_icon, 0, {opacity:1});
         replay_container.onmouseover = function () {
-          TweenLite.to(replay_icon, 1, {rotation: -360});
+          TweenLite.to(replay_icon, 1, {rotation: -360, transformOrigin:"50% 56%"});
         }
         replay_container.onmouseout = function () {
           TweenLite.to(replay_icon, 0, {rotation: 0});
@@ -32,7 +32,7 @@ var BanTimeline = {
         }
   },
   frame1: function () {
-    TweenLite.to(frame1txt, .5, {opacity:0, left:-120, delay:2.5});
+    TweenLite.to(frame1txt, .5, {opacity:0,left:-120, delay:2.5});
     TweenLite.delayedCall(2.5, BanTimeline.frame2); 
   },
   frame2: function () {

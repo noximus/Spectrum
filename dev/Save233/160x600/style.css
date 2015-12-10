@@ -47,6 +47,7 @@ img{margin-left:-1px;}
 	width:160px;
     height:600px; 
     left: 160px;
+    opacity: 0;
 }
 #frame3txt{
 	position: absolute;
@@ -58,6 +59,7 @@ img{margin-left:-1px;}
 	width:160px;
     height:600px; 
     left: 160px;
+    opacity: 0;
 }
 #frame4txt{
 	position: absolute;
@@ -69,6 +71,7 @@ img{margin-left:-1px;}
 	width:160px;
     height:600px; 
     left: 160px;
+    opacity: 0;
 }
 #restrictions{
 	opacity: 0;
