@@ -5,12 +5,17 @@
 <meta charset="UTF-8">
 <title>300x600</title>
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="http://ad.adlegend.com/cdn/trueffect/te_html.min.js"></script>
+<script type="text/javascript">
+    function doClick1() {
+    te_html.click('clickTAG','');
+  }
+</script>
+
 </head>
 <body>
-
-
   <div id="container">
-    <a href="javascript:window.open(window.clickTAG)">
+    <a href="javascript:void(0);" onClick="doClick1();return false;">  
       <div id="bg"><img src="bg.jpg"></div>
       <div id="frame1txt"></div>
       <div id="frame2txt"></div>
